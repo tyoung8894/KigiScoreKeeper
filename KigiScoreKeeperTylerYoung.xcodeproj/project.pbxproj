@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8C787431DAD86AA003313C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C787421DAD86AA003313C6 /* AppDelegate.swift */; };
+		D8C787451DAD86AA003313C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C787441DAD86AA003313C6 /* ViewController.swift */; };
+		D8C787481DAD86AA003313C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C787461DAD86AA003313C6 /* Main.storyboard */; };
+		D8C7874A1DAD86AA003313C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C787491DAD86AA003313C6 /* Assets.xcassets */; };
+		D8C7874D1DAD86AA003313C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C7874B1DAD86AA003313C6 /* LaunchScreen.storyboard */; };
+		D8C787581DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C787571DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests.swift */; };
+		D8C787631DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C787621DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8C787541DAD86AA003313C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C787371DAD86AA003313C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8C7873E1DAD86AA003313C6;
+			remoteInfo = KigiScoreKeeperTylerYoung;
+		};
+		D8C7875F1DAD86AA003313C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C787371DAD86AA003313C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8C7873E1DAD86AA003313C6;
+			remoteInfo = KigiScoreKeeperTylerYoung;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8C7873F1DAD86AA003313C6 /* KigiScoreKeeperTylerYoung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KigiScoreKeeperTylerYoung.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C787421DAD86AA003313C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8C787441DAD86AA003313C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8C787471DAD86AA003313C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8C787491DAD86AA003313C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8C7874C1DAD86AA003313C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8C7874E1DAD86AA003313C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C787531DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KigiScoreKeeperTylerYoungTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C787571DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KigiScoreKeeperTylerYoungTests.swift; sourceTree = "<group>"; };
+		D8C787591DAD86AA003313C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C7875E1DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KigiScoreKeeperTylerYoungUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C787621DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KigiScoreKeeperTylerYoungUITests.swift; sourceTree = "<group>"; };
+		D8C787641DAD86AA003313C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8C7873C1DAD86AA003313C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C787501DAD86AA003313C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C7875B1DAD86AA003313C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8C787361DAD86AA003313C6 = {
+			isa = PBXGroup;
+			children = (
+				D8C787411DAD86AA003313C6 /* KigiScoreKeeperTylerYoung */,
+				D8C787561DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests */,
+				D8C787611DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests */,
+				D8C787401DAD86AA003313C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8C787401DAD86AA003313C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C7873F1DAD86AA003313C6 /* KigiScoreKeeperTylerYoung.app */,
+				D8C787531DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests.xctest */,
+				D8C7875E1DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C787411DAD86AA003313C6 /* KigiScoreKeeperTylerYoung */ = {
+			isa = PBXGroup;
+			children = (
+				D8C787421DAD86AA003313C6 /* AppDelegate.swift */,
+				D8C787441DAD86AA003313C6 /* ViewController.swift */,
+				D8C787461DAD86AA003313C6 /* Main.storyboard */,
+				D8C787491DAD86AA003313C6 /* Assets.xcassets */,
+				D8C7874B1DAD86AA003313C6 /* LaunchScreen.storyboard */,
+				D8C7874E1DAD86AA003313C6 /* Info.plist */,
+			);
+			path = KigiScoreKeeperTylerYoung;
+			sourceTree = "<group>";
+		};
+		D8C787561DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8C787571DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests.swift */,
+				D8C787591DAD86AA003313C6 /* Info.plist */,
+			);
+			path = KigiScoreKeeperTylerYoungTests;
+			sourceTree = "<group>";
+		};
+		D8C787611DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8C787621DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests.swift */,
+				D8C787641DAD86AA003313C6 /* Info.plist */,
+			);
+			path = KigiScoreKeeperTylerYoungUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8C7873E1DAD86AA003313C6 /* KigiScoreKeeperTylerYoung */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C787671DAD86AA003313C6 /* Build configuration list for PBXNativeTarget "KigiScoreKeeperTylerYoung" */;
+			buildPhases = (
+				D8C7873B1DAD86AA003313C6 /* Sources */,
+				D8C7873C1DAD86AA003313C6 /* Frameworks */,
+				D8C7873D1DAD86AA003313C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KigiScoreKeeperTylerYoung;
+			productName = KigiScoreKeeperTylerYoung;
+			productReference = D8C7873F1DAD86AA003313C6 /* KigiScoreKeeperTylerYoung.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8C787521DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C7876A1DAD86AA003313C6 /* Build configuration list for PBXNativeTarget "KigiScoreKeeperTylerYoungTests" */;
+			buildPhases = (
+				D8C7874F1DAD86AA003313C6 /* Sources */,
+				D8C787501DAD86AA003313C6 /* Frameworks */,
+				D8C787511DAD86AA003313C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8C787551DAD86AA003313C6 /* PBXTargetDependency */,
+			);
+			name = KigiScoreKeeperTylerYoungTests;
+			productName = KigiScoreKeeperTylerYoungTests;
+			productReference = D8C787531DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8C7875D1DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C7876D1DAD86AA003313C6 /* Build configuration list for PBXNativeTarget "KigiScoreKeeperTylerYoungUITests" */;
+			buildPhases = (
+				D8C7875A1DAD86AA003313C6 /* Sources */,
+				D8C7875B1DAD86AA003313C6 /* Frameworks */,
+				D8C7875C1DAD86AA003313C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8C787601DAD86AA003313C6 /* PBXTargetDependency */,
+			);
+			name = KigiScoreKeeperTylerYoungUITests;
+			productName = KigiScoreKeeperTylerYoungUITests;
+			productReference = D8C7875E1DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8C787371DAD86AA003313C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Tyler Young";
+				TargetAttributes = {
+					D8C7873E1DAD86AA003313C6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					D8C787521DAD86AA003313C6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8C7873E1DAD86AA003313C6;
+					};
+					D8C7875D1DAD86AA003313C6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8C7873E1DAD86AA003313C6;
+					};
+				};
+			};
+			buildConfigurationList = D8C7873A1DAD86AA003313C6 /* Build configuration list for PBXProject "KigiScoreKeeperTylerYoung" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8C787361DAD86AA003313C6;
+			productRefGroup = D8C787401DAD86AA003313C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8C7873E1DAD86AA003313C6 /* KigiScoreKeeperTylerYoung */,
+				D8C787521DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests */,
+				D8C7875D1DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8C7873D1DAD86AA003313C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C7874D1DAD86AA003313C6 /* LaunchScreen.storyboard in Resources */,
+				D8C7874A1DAD86AA003313C6 /* Assets.xcassets in Resources */,
+				D8C787481DAD86AA003313C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C787511DAD86AA003313C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C7875C1DAD86AA003313C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8C7873B1DAD86AA003313C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C787451DAD86AA003313C6 /* ViewController.swift in Sources */,
+				D8C787431DAD86AA003313C6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C7874F1DAD86AA003313C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C787581DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C7875A1DAD86AA003313C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C787631DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8C787551DAD86AA003313C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8C7873E1DAD86AA003313C6 /* KigiScoreKeeperTylerYoung */;
+			targetProxy = D8C787541DAD86AA003313C6 /* PBXContainerItemProxy */;
+		};
+		D8C787601DAD86AA003313C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8C7873E1DAD86AA003313C6 /* KigiScoreKeeperTylerYoung */;
+			targetProxy = D8C7875F1DAD86AA003313C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8C787461DAD86AA003313C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C787471DAD86AA003313C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8C7874B1DAD86AA003313C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C7874C1DAD86AA003313C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8C787651DAD86AA003313C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8C787661DAD86AA003313C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8C787681DAD86AA003313C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KigiScoreKeeperTylerYoung/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.edu.elon.KigiScoreKeeperTylerYoung;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D8C787691DAD86AA003313C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KigiScoreKeeperTylerYoung/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.edu.elon.KigiScoreKeeperTylerYoung;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D8C7876B1DAD86AA003313C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KigiScoreKeeperTylerYoungTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.edu.elon.KigiScoreKeeperTylerYoungTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KigiScoreKeeperTylerYoung.app/KigiScoreKeeperTylerYoung";
+			};
+			name = Debug;
+		};
+		D8C7876C1DAD86AA003313C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KigiScoreKeeperTylerYoungTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.edu.elon.KigiScoreKeeperTylerYoungTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KigiScoreKeeperTylerYoung.app/KigiScoreKeeperTylerYoung";
+			};
+			name = Release;
+		};
+		D8C7876E1DAD86AA003313C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KigiScoreKeeperTylerYoungUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.edu.elon.KigiScoreKeeperTylerYoungUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KigiScoreKeeperTylerYoung;
+			};
+			name = Debug;
+		};
+		D8C7876F1DAD86AA003313C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KigiScoreKeeperTylerYoungUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cs.edu.elon.KigiScoreKeeperTylerYoungUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KigiScoreKeeperTylerYoung;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8C7873A1DAD86AA003313C6 /* Build configuration list for PBXProject "KigiScoreKeeperTylerYoung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C787651DAD86AA003313C6 /* Debug */,
+				D8C787661DAD86AA003313C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C787671DAD86AA003313C6 /* Build configuration list for PBXNativeTarget "KigiScoreKeeperTylerYoung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C787681DAD86AA003313C6 /* Debug */,
+				D8C787691DAD86AA003313C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8C7876A1DAD86AA003313C6 /* Build configuration list for PBXNativeTarget "KigiScoreKeeperTylerYoungTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C7876B1DAD86AA003313C6 /* Debug */,
+				D8C7876C1DAD86AA003313C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8C7876D1DAD86AA003313C6 /* Build configuration list for PBXNativeTarget "KigiScoreKeeperTylerYoungUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C7876E1DAD86AA003313C6 /* Debug */,
+				D8C7876F1DAD86AA003313C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8C787371DAD86AA003313C6 /* Project object */;
+}

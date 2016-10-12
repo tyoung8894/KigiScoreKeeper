@@ -47,15 +47,46 @@ class SecondViewController: UIViewController {
     var scorePlayer3 = 0
     var scorePlayer4 = 0
     var scorePlayer5 = 0
-    var turnCounter = 0
+    var numberOfPlayers = 0
+    
     var size = 0
-    var numPlayers = 0
-    var turn = 0
+    
     
  
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        numberOfPlayers = viewController.getNumberofPlayers()
+//        if numberOfPlayers == 0 { //need a get count
+//            fifthNameLabel.isHidden = true
+//        }
+//        else if numberOfPlayers == 1 {
+//            secondNameLabel.isHidden = true
+//            thirdNameLabel.isHidden = true
+//            fourthNameLabel.isHidden = true
+//            fifthNameLabel.isHidden = true
+//            name2TextField.isHidden = true
+//            name3TextField.isHidden = true
+//            name4TextField.isHidden = true
+//            name5TextField.isHidden = true        }
+//        else if numberOfPlayers == 2 {
+//            thirdNameLabel.isHidden = true
+//            fourthNameLabel.isHidden = true
+//            fifthNameLabel.isHidden = true
+//            name3TextField.isHidden = true
+//            name4TextField.isHidden = true
+//            name5TextField.isHidden = true
+//        }
+//        else if numberOfPlayers == 3 {
+//                fourthNameLabel.isHidden = true
+//                fifthNameLabel.isHidden = true
+//                name4TextField.isHidden = true
+//                name5TextField.isHidden = true
+//            }
+//        else if viewController.counter == 4 {
+//                fifthNameLabel.isHidden = true
+//                name5TextField.isHidden = true
+//        }
         firstNameLabel.text = player1 + " score:"
         secondNameLabel.text = player2 + " score:"
         thirdNameLabel.text = player3 + " score:"
@@ -66,12 +97,12 @@ class SecondViewController: UIViewController {
         name3TextField.text = String(scorePlayer3)
         name4TextField.text = String(scorePlayer4)
         name5TextField.text = String(scorePlayer5)
-        
+        firstNameLabel.textColor = UIColor .green
         // Do any additional setup after loading the view.
     }
     
     //func getNumberofPlayers() -> Int {
-        //size = viewController.players.count
+       // numPlayers = viewController.players.count
         //return size
    //}
     
@@ -93,10 +124,17 @@ class SecondViewController: UIViewController {
     var counter = 1
     
     @IBAction func addScore(_ sender: UIButton) {
+        //if thirdNameLabel.text == " score:" { counter += 3 OR .isHidden = true
         //turn = getTurn()
         let holder = (sender.titleLabel?.text)!
         //var number = 0
         if counter == 1 {
+            firstNameLabel.textColor = UIColor .black
+            secondNameLabel.textColor = UIColor .green
+            thirdNameLabel.textColor = UIColor .black
+            fourthNameLabel.textColor = UIColor .black
+            fifthNameLabel.textColor = UIColor .black
+            
             if holder == "0" {
                 name1TextField.text = String(scorePlayer1)
                 counter += 1
@@ -169,6 +207,11 @@ class SecondViewController: UIViewController {
             }
         }
         else if counter == 2 {
+            firstNameLabel.textColor = UIColor .black
+            secondNameLabel.textColor = UIColor .black
+            thirdNameLabel.textColor = UIColor .green
+            fourthNameLabel.textColor = UIColor .black
+            fifthNameLabel.textColor = UIColor .black
             if holder == "0" {
                 name2TextField.text = String(scorePlayer2)
                 counter += 1
@@ -241,6 +284,11 @@ class SecondViewController: UIViewController {
             }
         }
         else if counter == 3 {
+            firstNameLabel.textColor = UIColor .black
+            secondNameLabel.textColor = UIColor .black
+            thirdNameLabel.textColor = UIColor .black
+            fourthNameLabel.textColor = UIColor .green
+            fifthNameLabel.textColor = UIColor .black
             if holder == "0" {
                 name3TextField.text = String(scorePlayer3)
                 counter += 1
@@ -313,6 +361,11 @@ class SecondViewController: UIViewController {
             }
         }
         else if counter == 4{
+            firstNameLabel.textColor = UIColor .black
+            secondNameLabel.textColor = UIColor .black
+            thirdNameLabel.textColor = UIColor .black
+            fourthNameLabel.textColor = UIColor .black
+            fifthNameLabel.textColor = UIColor .green
             if holder == "0" {
                 name4TextField.text = String(scorePlayer4)
                 counter += 1
@@ -385,6 +438,11 @@ class SecondViewController: UIViewController {
             }
         }
         else if counter == 5 {
+            firstNameLabel.textColor = UIColor .green
+            secondNameLabel.textColor = UIColor .black
+            thirdNameLabel.textColor = UIColor .black
+            fourthNameLabel.textColor = UIColor .black
+            fifthNameLabel.textColor = UIColor .black
             if holder == "0" {
                 name5TextField.text = String(scorePlayer5)
                 counter = 1

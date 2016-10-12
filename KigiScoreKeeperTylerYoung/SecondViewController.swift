@@ -9,7 +9,7 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var secondNameLabel: UILabel!
     @IBOutlet weak var name1TextField: UITextField!
@@ -28,31 +28,60 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var buttonAddTwelve: UIButton!
     @IBOutlet weak var buttonAddThirteen: UIButton!
     
-    var viewController = ViewController()
-    var playerOneScore : Int = 0
-    var turn : Int = 0
+    //var viewController = ViewController()
+    var status: String = ""
+    var player1 : String = ""
+    var player2 : String = ""
+    var player3 : String = ""
+    var player4 : String = ""
+    var player5 : String = ""
+    var score = 0
     
-   
+    var scorePlayer = 0
+    var scorePlayer2 = 0
     
-    
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        name1TextField.text = "Score : 0"
-        //name1TextField.text = viewController.nameArray[0]
+        firstNameLabel.text = player1 + " score:"
+        secondNameLabel.text = player2 + " score:"
+        name1TextField.text = String(scorePlayer)
+        name2TextField.text = String(scorePlayer2)
+        
         // Do any additional setup after loading the view.
     }
     
-    
-   // @IBAction func tapButton1(_ sender: UITapGestureRecognizer) {
-    //    if turn == 0{
-     //   playerOneScore += 1
-     //   name1TextField.text = "Score : 1"
-     //   }
-     //   else{
-     //   turn += 1
+    @IBAction func addScore(_ sender: UIButton) {
+        //turn = getTurn()
         
-   // }
+        let holder = (sender.titleLabel?.text)!
+        var number = 0
+        if holder == "1" {
+        number = 1
+        }
+        else if holder == "2" {
+            number = 2
+        }
+        else if holder == "3" {
+            number = 3
+        }
+        else if holder == "4" {
+            number = 4
+        }
+        else if holder == "5" {
+            number = 5 
+        }
+        
+        scorePlayer = scorePlayer + number
+        name1TextField.text = String(scorePlayer)
     }
+    
+    
+    //func setTables() {
+    
+    // }
+    
+}
 
 //}

@@ -32,22 +32,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdR-4A-RZr">
-                                <frame key="frameInset" minX="80" minY="106" width="64" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdR-4A-RZr">
+                                <frame key="frameInset" minX="35" minY="102" width="101" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ak-qG-S3g">
-                                <frame key="frameInset" minX="164" minY="392" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="g9p-8V-48O" kind="show" identifier="showSecondViewController" id="FJd-e8-ID3"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2U-3K-vx0">
                                 <frame key="frameInset" minX="152" minY="97" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -55,11 +46,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOw-LX-U69">
+                                <frame key="frameInset" minX="150" minY="155" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Add Player"/>
+                                <connections>
+                                    <action selector="addPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWk-sa-Ufb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ak-qG-S3g">
+                                <frame key="frameInset" minX="164" minY="391" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="g9p-8V-48O" kind="show" identifier="showSecondViewController" id="FJd-e8-ID3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="b4B-eR-Us9"/>
                     <connections>
+                        <outlet property="addPlayerButton" destination="LOw-LX-U69" id="wHJ-oK-FtN"/>
                         <outlet property="playerNameInput1" destination="e2U-3K-vx0" id="vup-Kq-rFl"/>
                     </connections>
                 </viewController>
@@ -94,16 +104,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndV-5w-d03">
-                                <frame key="frameInset" minX="115" minY="156" width="50" height="21"/>
+                                <frame key="frameInset" minX="64" minY="156" width="101" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8P-Ih-sR3">
-                                <frame key="frameInset" minX="70" minY="492" width="46" height="30"/>
+                                <frame key="frameInset" minX="78" minY="492" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="vju-yl-8NN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5i-Z2-fmY">
                                 <frame key="frameInset" minX="124" minY="492" width="46" height="30"/>
@@ -168,7 +181,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6h-zX-6i3">
-                                <frame key="frameInset" minX="115" minY="198" width="53" height="21"/>
+                                <frame key="frameInset" minX="64" minY="198" width="104" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -182,46 +195,28 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCo-86-Y11">
-                                <frame key="frameInset" minX="7" minY="492" width="39" height="30"/>
+                                <frame key="frameInset" minX="12" minY="492" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <state key="normal" title="Add 1"/>
+                                <state key="normal" title="1"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="aRs-u9-gkc" appends="YES" id="sdm-Dp-W7Q"/>
+                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="Zkr-Vw-xgf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="buttonAddEight" destination="bhR-5U-noJ" id="fcd-KO-ilE"/>
-                        <outlet property="buttonAddEleven" destination="g0o-DD-7Ro" id="6FU-ns-sFB"/>
-                        <outlet property="buttonAddFive" destination="uJV-io-jyq" id="dYa-m2-Zyz"/>
-                        <outlet property="buttonAddFour" destination="tss-Z1-IfZ" id="f5r-n4-lyQ"/>
-                        <outlet property="buttonAddNine" destination="KjB-p2-x6d" id="Man-fa-ofH"/>
-                        <outlet property="buttonAddOne" destination="UCo-86-Y11" id="EN0-ES-5Ur"/>
-                        <outlet property="buttonAddSeven" destination="957-6L-1B2" id="LUo-CZ-nbn"/>
-                        <outlet property="buttonAddSix" destination="hqf-9b-F60" id="YEL-sM-yMP"/>
-                        <outlet property="buttonAddTen" destination="bzv-e7-UIC" id="5HN-vJ-goD"/>
-                        <outlet property="buttonAddThirteen" destination="ucU-q7-6Un" id="TQr-1L-zAO"/>
-                        <outlet property="buttonAddThree" destination="U5i-Z2-fmY" id="Vjd-An-G8h"/>
-                        <outlet property="buttonAddTwelve" destination="rEa-fF-6dh" id="3lc-XM-iKJ"/>
-                        <outlet property="buttonAddTwo" destination="v8P-Ih-sR3" id="Mkh-pL-dZe"/>
-                        <outlet property="firstNameLabel" destination="ndV-5w-d03" id="ImA-4g-MLh"/>
-                        <outlet property="name1TextField" destination="FMe-s8-0KJ" id="H17-pB-Ad5"/>
-                        <outlet property="name2TextField" destination="7sY-Xg-RXR" id="Ylr-38-2Ob"/>
-                        <outlet property="secondNameLabel" destination="t6h-zX-6i3" id="ibe-Aq-HfN"/>
-                        <outlet property="tapButton1" destination="aRs-u9-gkc" id="ruM-vm-m8b"/>
+                        <outlet property="buttonAddOne" destination="UCo-86-Y11" id="ZdX-6D-1IY"/>
+                        <outlet property="firstNameLabel" destination="ndV-5w-d03" id="NqM-As-dS8"/>
+                        <outlet property="name1TextField" destination="FMe-s8-0KJ" id="ldc-Yv-57i"/>
+                        <outlet property="name2TextField" destination="7sY-Xg-RXR" id="cwH-O4-KJ3"/>
+                        <outlet property="secondNameLabel" destination="t6h-zX-6i3" id="a54-8D-RiR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4R-Qm-VjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="aRs-u9-gkc">
-                    <connections>
-                        <action selector="tapButton1:" destination="g9p-8V-48O" id="XLv-F9-fu2"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1772" y="35.532233883058474"/>
+            <point key="canvasLocation" x="1688.8" y="35.532233883058474"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T5B-XG-qXQ">

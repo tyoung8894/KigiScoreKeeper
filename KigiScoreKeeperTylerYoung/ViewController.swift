@@ -22,18 +22,23 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        //view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showSecondViewController" {
-            let scoreViewController = segue.destination as! SecondViewController
-            if players.count >= 2 { scoreViewController.player1 = players[1]}
-            if players.count >= 3 { scoreViewController.player2 = players[2]}
-            if players.count >= 4{ scoreViewController.player3 = players[3]}
-            if players.count >= 5 { scoreViewController.player4 = players[4]}
-            if players.count >= 6 { scoreViewController.player5 = players[5]}
+            let secondViewController = segue.destination as! SecondViewController
+            if players.count >= 2 { secondViewController.player1 = players[1]}
+            if players.count >= 3 { secondViewController.player2 = players[2]}
+            if players.count >= 4{ secondViewController.player3 = players[3]}
+            if players.count >= 5 { secondViewController.player4 = players[4]}
+            if players.count >= 6 { secondViewController.player5 = players[5]}
         }
     }
         
@@ -51,8 +56,12 @@ class ViewController: UIViewController {
             players.append(playerNameInput1.text!)
             counter += 1
             playerNameInput1.text = ""
+            
         }
     }
+    
+    
+    
 
     
     

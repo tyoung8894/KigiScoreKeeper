@@ -207,7 +207,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="buttonAddOne" destination="UCo-86-Y11" id="ZdX-6D-1IY"/>
                         <outlet property="firstNameLabel" destination="ndV-5w-d03" id="NqM-As-dS8"/>
                         <outlet property="name1TextField" destination="FMe-s8-0KJ" id="ldc-Yv-57i"/>
                         <outlet property="name2TextField" destination="7sY-Xg-RXR" id="cwH-O4-KJ3"/>

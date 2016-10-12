@@ -36,7 +36,6 @@ class SecondViewController: UIViewController {
     
     
     var viewController = ViewController()
-    var status: String = ""
     var player1 : String = ""
     var player2 : String = ""
     var player3 : String = ""
@@ -103,17 +102,17 @@ class SecondViewController: UIViewController {
                 counter += 1
                 //need to hide other text fields
             }
-            else if holder == "1"{
+            else if holder == "1" {
                 scorePlayer1 = scorePlayer1 + 1
                 name1TextField.text = String(scorePlayer1)
                 counter += 1
             }
-            else if holder == "2"{
+            else if holder == "2" {
                 scorePlayer1 = scorePlayer1 + 2
                 name1TextField.text = String(scorePlayer1)
                 counter += 1
             }
-            else if holder == "3"{
+            else if holder == "3" {
                 scorePlayer1 = scorePlayer1 + 3
                 name1TextField.text = String(scorePlayer1)
                 counter += 1
@@ -457,12 +456,6 @@ class SecondViewController: UIViewController {
                 counter = 1
             }
         }
-        
-            
-        
-        //turn += 1
-        //corePlayer1 = scorePlayer1 + number
-        //name1TextField.text = String(scorePlayer1)
     }
     
     

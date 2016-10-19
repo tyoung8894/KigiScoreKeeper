@@ -50,12 +50,30 @@ class SecondViewController: UIViewController {
     var numberOfPlayers = 0
     
     var size = 0
+    var numPlayers = 0
     
     
  
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        numberOfPlayers = viewController.counter
+        
+        if player1 != "" {
+            numPlayers += 1
+        }
+        if player2 != "" {
+            numPlayers += 1
+        }
+        if player3 != "" {
+            numPlayers += 1
+        }
+        if player4 != "" {
+            numPlayers += 1
+        }
+        if player5 != "" {
+            numPlayers += 1
+        }
 //        numberOfPlayers = viewController.getNumberofPlayers()
 //        if numberOfPlayers == 0 { //need a get count
 //            fifthNameLabel.isHidden = true
@@ -87,6 +105,14 @@ class SecondViewController: UIViewController {
 //                fifthNameLabel.isHidden = true
 //                name5TextField.isHidden = true
 //        }
+        if numberOfPlayers == 2{
+            firstNameLabel.text = player1 + " score:"
+            secondNameLabel.text = player2 + " score:"
+            thirdNameLabel.text = ""
+            fourthNameLabel.text = ""
+            fifthNameLabel.text = ""
+        }
+        else{
         firstNameLabel.text = player1 + " score:"
         secondNameLabel.text = player2 + " score:"
         thirdNameLabel.text = player3 + " score:"
@@ -98,6 +124,7 @@ class SecondViewController: UIViewController {
         name4TextField.text = String(scorePlayer4)
         name5TextField.text = String(scorePlayer5)
         firstNameLabel.textColor = UIColor .green
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -127,7 +154,6 @@ class SecondViewController: UIViewController {
         //if thirdNameLabel.text == " score:" { counter += 3 OR .isHidden = true
         //turn = getTurn()
         let holder = (sender.titleLabel?.text)!
-        //var number = 0
         if counter == 1 {
             firstNameLabel.textColor = UIColor .black
             secondNameLabel.textColor = UIColor .green

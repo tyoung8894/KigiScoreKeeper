@@ -112,6 +112,7 @@ class SecondViewController: UIViewController {
             name3TextField.text = String(scorePlayer3)
             name4TextField.isHidden = true
             name5TextField.isHidden = true
+            firstNameLabel.textColor = UIColor .magenta
         }
         else if numPlayers == 4{
             firstNameLabel.text = player1 + " score:"
@@ -124,6 +125,7 @@ class SecondViewController: UIViewController {
             name3TextField.text = String(scorePlayer3)
             name4TextField.text = String(scorePlayer4)
             name5TextField.isHidden = true
+            firstNameLabel.textColor = UIColor .magenta
         }
         else{
         firstNameLabel.text = player1 + " score:"
@@ -136,7 +138,7 @@ class SecondViewController: UIViewController {
         name3TextField.text = String(scorePlayer3)
         name4TextField.text = String(scorePlayer4)
         name5TextField.text = String(scorePlayer5)
-        firstNameLabel.textColor = UIColor .green
+        firstNameLabel.textColor = UIColor .magenta
         }
 
     }
@@ -144,10 +146,10 @@ class SecondViewController: UIViewController {
     
     var counter = 1
     var counterTwo = 1
+    var counterThree = 1
+    var counterFour = 1
     
     @IBAction func addScore(_ sender: UIButton) {
-        //if thirdNameLabel.text == " score:" { counter += 3 OR .isHidden = true
-     
         let holder = (sender.titleLabel?.text)!
         
         if numPlayers == 1{
@@ -167,7 +169,7 @@ class SecondViewController: UIViewController {
                 name1TextField.text = String(scorePlayer1)
             }
             else if holder == "4"{
-                scorePlayer1 = scorePlayer1 + 5
+                scorePlayer1 = scorePlayer1 + 4
                 name1TextField.text = String(scorePlayer1)
             }
             else if holder == "5"{
@@ -233,7 +235,7 @@ class SecondViewController: UIViewController {
                     counterTwo = 2
                 }
                 else if holder == "4"{
-                    scorePlayer1 = scorePlayer1 + 5
+                    scorePlayer1 = scorePlayer1 + 4
                     name1TextField.text = String(scorePlayer1)
                     counterTwo = 2
                 }
@@ -306,7 +308,7 @@ class SecondViewController: UIViewController {
                     counterTwo = 1
                 }
                 else if holder == "4"{
-                    scorePlayer2 = scorePlayer2 + 5
+                    scorePlayer2 = scorePlayer2 + 4
                     name2TextField.text = String(scorePlayer2)
                     counterTwo = 1
                 }
@@ -358,11 +360,544 @@ class SecondViewController: UIViewController {
                 
             }
         }
+        else if numPlayers == 3 {
+            if counterThree == 1{
+                firstNameLabel.textColor = UIColor .black
+                secondNameLabel.textColor = UIColor .magenta
+                thirdNameLabel.textColor = UIColor .black
+                if holder == "0" {
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "1" {
+                    scorePlayer1 = scorePlayer1 + 1
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "2" {
+                    scorePlayer1 = scorePlayer1 + 2
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "3" {
+                    scorePlayer1 = scorePlayer1 + 3
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "4"{
+                    scorePlayer1 = scorePlayer1 + 4
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "5"{
+                    scorePlayer1 = scorePlayer1 + 5
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "6"{
+                    scorePlayer1 = scorePlayer1 + 6
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "7"{
+                    scorePlayer1 = scorePlayer1 + 7
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "8"{
+                    scorePlayer1 = scorePlayer1 + 8
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "9"{
+                    scorePlayer1 = scorePlayer1 + 9
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "10"{
+                    scorePlayer1 = scorePlayer1 + 10
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "11"{
+                    scorePlayer1 = scorePlayer1 + 11
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "12"{
+                    scorePlayer1 = scorePlayer1 + 12
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+                else if holder == "13"{
+                    scorePlayer1 = scorePlayer1 + 13
+                    name1TextField.text = String(scorePlayer1)
+                    counterThree += 1
+                }
+            }
+            else if counterThree == 2 {
+                firstNameLabel.textColor = UIColor .black
+                secondNameLabel.textColor = UIColor .black
+                thirdNameLabel.textColor = UIColor .magenta
+                if holder == "0" {
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "1"{
+                    scorePlayer2 = scorePlayer2 + 1
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "2"{
+                    scorePlayer2 = scorePlayer2 + 2
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "3"{
+                    scorePlayer2 = scorePlayer2 + 3
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "4"{
+                    scorePlayer2 = scorePlayer2 + 4
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "5"{
+                    scorePlayer2 = scorePlayer2 + 5
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "6"{
+                    scorePlayer2 = scorePlayer2 + 6
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "7"{
+                    scorePlayer2 = scorePlayer2 + 7
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "8"{
+                    scorePlayer2 = scorePlayer2 + 8
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "9"{
+                    scorePlayer2 = scorePlayer2 + 9
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "10"{
+                    scorePlayer2 = scorePlayer2 + 10
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "11"{
+                    scorePlayer2 = scorePlayer2 + 11
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "12"{
+                    scorePlayer2 = scorePlayer2 + 12
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                else if holder == "13"{
+                    scorePlayer2 = scorePlayer2 + 13
+                    name2TextField.text = String(scorePlayer2)
+                    counterThree += 1
+                }
+                
+            }
+            else if counterThree == 3 {
+                firstNameLabel.textColor = UIColor .magenta
+                secondNameLabel.textColor = UIColor .black
+                thirdNameLabel.textColor = UIColor .black
+                if holder == "0" {
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "1"{
+                    scorePlayer3 = scorePlayer3 + 1
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "2"{
+                    scorePlayer3 = scorePlayer3 + 2
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "3"{
+                    scorePlayer3 = scorePlayer3 + 3
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "4"{
+                    scorePlayer3 = scorePlayer3 + 4
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "5"{
+                    scorePlayer3 = scorePlayer3 + 5
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "6"{
+                    scorePlayer3 = scorePlayer3 + 6
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "7"{
+                    scorePlayer3 = scorePlayer3 + 7
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "8"{
+                    scorePlayer3 = scorePlayer3 + 8
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "9"{
+                    scorePlayer3 = scorePlayer3 + 9
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "10"{
+                    scorePlayer3 = scorePlayer3 + 10
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "11"{
+                    scorePlayer3 = scorePlayer3 + 11
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "12"{
+                    scorePlayer3 = scorePlayer3 + 12
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                else if holder == "13"{
+                    scorePlayer3 = scorePlayer3 + 13
+                    name3TextField.text = String(scorePlayer3)
+                    counterThree = 1
+                }
+                
+            }
+            else if numPlayers == 4 {
+                firstNameLabel.textColor = UIColor .black
+                secondNameLabel.textColor = UIColor .magenta
+                thirdNameLabel.textColor = UIColor .black
+                fourthNameLabel.textColor = UIColor .black
+                if counterFour == 1 {
+                    if holder == "0" {
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "1" {
+                        scorePlayer1 = scorePlayer1 + 1
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "2" {
+                        scorePlayer1 = scorePlayer1 + 2
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "3" {
+                        scorePlayer1 = scorePlayer1 + 3
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "4"{
+                        scorePlayer1 = scorePlayer1 + 4
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "5"{
+                        scorePlayer1 = scorePlayer1 + 5
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "6"{
+                        scorePlayer1 = scorePlayer1 + 6
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "7"{
+                        scorePlayer1 = scorePlayer1 + 7
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "8"{
+                        scorePlayer1 = scorePlayer1 + 8
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "9"{
+                        scorePlayer1 = scorePlayer1 + 9
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "10"{
+                        scorePlayer1 = scorePlayer1 + 10
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "11"{
+                        scorePlayer1 = scorePlayer1 + 11
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "12"{
+                        scorePlayer1 = scorePlayer1 + 12
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    else if holder == "13"{
+                        scorePlayer1 = scorePlayer1 + 13
+                        name1TextField.text = String(scorePlayer1)
+                        counterFour += 1
+                    }
+                    
+                }
+                else if counterFour == 2 {
+                    firstNameLabel.textColor = UIColor .black
+                    secondNameLabel.textColor = UIColor .black
+                    thirdNameLabel.textColor = UIColor .magenta
+                    fourthNameLabel.textColor = UIColor .black
+
+                    if holder == "0" {
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "1"{
+                        scorePlayer2 = scorePlayer2 + 1
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "2"{
+                        scorePlayer2 = scorePlayer2 + 2
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "3"{
+                        scorePlayer2 = scorePlayer2 + 3
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "4"{
+                        scorePlayer2 = scorePlayer2 + 4
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "5"{
+                        scorePlayer2 = scorePlayer2 + 5
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "6"{
+                        scorePlayer2 = scorePlayer2 + 6
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "7"{
+                        scorePlayer2 = scorePlayer2 + 7
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "8"{
+                        scorePlayer2 = scorePlayer2 + 8
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "9"{
+                        scorePlayer2 = scorePlayer2 + 9
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "10"{
+                        scorePlayer2 = scorePlayer2 + 10
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "11"{
+                        scorePlayer2 = scorePlayer2 + 11
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "12"{
+                        scorePlayer2 = scorePlayer2 + 12
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    else if holder == "13"{
+                        scorePlayer2 = scorePlayer2 + 13
+                        name2TextField.text = String(scorePlayer2)
+                        counterFour += 1
+                    }
+                    
+                }
+                else if counterFour == 3 {
+                    firstNameLabel.textColor = UIColor .black
+                    secondNameLabel.textColor = UIColor .black
+                    thirdNameLabel.textColor = UIColor .black
+                    fourthNameLabel.textColor = UIColor .green
+    
+                    if holder == "0" {
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "1"{
+                        scorePlayer3 = scorePlayer3 + 1
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "2"{
+                        scorePlayer3 = scorePlayer3 + 2
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "3"{
+                        scorePlayer3 = scorePlayer3 + 3
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "4"{
+                        scorePlayer3 = scorePlayer3 + 4
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "5"{
+                        scorePlayer3 = scorePlayer3 + 5
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "6"{
+                        scorePlayer3 = scorePlayer3 + 6
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "7"{
+                        scorePlayer3 = scorePlayer3 + 7
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "8"{
+                        scorePlayer3 = scorePlayer3 + 8
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "9"{
+                        scorePlayer3 = scorePlayer3 + 9
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "10"{
+                        scorePlayer3 = scorePlayer3 + 10
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "11"{
+                        scorePlayer3 = scorePlayer3 + 11
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "12"{
+                        scorePlayer3 = scorePlayer3 + 12
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                    else if holder == "13"{
+                        scorePlayer3 = scorePlayer3 + 13
+                        name3TextField.text = String(scorePlayer3)
+                        counterFour += 1
+                    }
+                }
+                else if counterFour == 4 {
+                    firstNameLabel.textColor = UIColor .magenta
+                    secondNameLabel.textColor = UIColor .black
+                    thirdNameLabel.textColor = UIColor .black
+                    fourthNameLabel.textColor = UIColor .black
+                    if holder == "0" {
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "1"{
+                        scorePlayer4 = scorePlayer4 + 1
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "2"{
+                        scorePlayer4 = scorePlayer4 + 2
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "3"{
+                        scorePlayer4 = scorePlayer4 + 3
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "4"{
+                        scorePlayer4 = scorePlayer4 + 4
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "5"{
+                        scorePlayer4 = scorePlayer4 + 5
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "6"{
+                        scorePlayer4 = scorePlayer4 + 6
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "7"{
+                        scorePlayer4 = scorePlayer4 + 7
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "8"{
+                        scorePlayer4 = scorePlayer4 + 8
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "9"{
+                        scorePlayer4 = scorePlayer4 + 9
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "10"{
+                        scorePlayer4 = scorePlayer4 + 10
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "11"{
+                        scorePlayer4 = scorePlayer4 + 11
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "12"{
+                        scorePlayer4 = scorePlayer4 + 12
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                    else if holder == "13"{
+                        scorePlayer4 = scorePlayer4 + 13
+                        name4TextField.text = String(scorePlayer4)
+                        counterFour = 1
+                    }
+                }
+            }
+            
+        }
         else{
         
         if counter == 1 {
             firstNameLabel.textColor = UIColor .black
-            secondNameLabel.textColor = UIColor .green
+            secondNameLabel.textColor = UIColor .magenta
             thirdNameLabel.textColor = UIColor .black
             fourthNameLabel.textColor = UIColor .black
             fifthNameLabel.textColor = UIColor .black
@@ -370,7 +905,6 @@ class SecondViewController: UIViewController {
             if holder == "0" {
                 name1TextField.text = String(scorePlayer1)
                 counter += 1
-                //need to hide other text fields
             }
             else if holder == "1" {
                 scorePlayer1 = scorePlayer1 + 1
@@ -388,7 +922,7 @@ class SecondViewController: UIViewController {
                 counter += 1
             }
             else if holder == "4"{
-                scorePlayer1 = scorePlayer1 + 5
+                scorePlayer1 = scorePlayer1 + 4
                 name1TextField.text = String(scorePlayer1)
                 counter += 1
             }
@@ -441,7 +975,7 @@ class SecondViewController: UIViewController {
         else if counter == 2 {
             firstNameLabel.textColor = UIColor .black
             secondNameLabel.textColor = UIColor .black
-            thirdNameLabel.textColor = UIColor .green
+            thirdNameLabel.textColor = UIColor .magenta
             fourthNameLabel.textColor = UIColor .black
             fifthNameLabel.textColor = UIColor .black
             if holder == "0" {
@@ -464,7 +998,7 @@ class SecondViewController: UIViewController {
                 counter += 1
             }
             else if holder == "4"{
-                scorePlayer2 = scorePlayer2 + 5
+                scorePlayer2 = scorePlayer2 + 4
                 name2TextField.text = String(scorePlayer2)
                 counter += 1
             }
@@ -518,7 +1052,7 @@ class SecondViewController: UIViewController {
             firstNameLabel.textColor = UIColor .black
             secondNameLabel.textColor = UIColor .black
             thirdNameLabel.textColor = UIColor .black
-            fourthNameLabel.textColor = UIColor .green
+            fourthNameLabel.textColor = UIColor .magenta
             fifthNameLabel.textColor = UIColor .black
             if holder == "0" {
                 name3TextField.text = String(scorePlayer3)
@@ -541,7 +1075,7 @@ class SecondViewController: UIViewController {
                 counter += 1
             }
             else if holder == "4"{
-                scorePlayer3 = scorePlayer3 + 5
+                scorePlayer3 = scorePlayer3 + 4
                 name3TextField.text = String(scorePlayer3)
                 counter += 1
             }
@@ -596,11 +1130,10 @@ class SecondViewController: UIViewController {
             secondNameLabel.textColor = UIColor .black
             thirdNameLabel.textColor = UIColor .black
             fourthNameLabel.textColor = UIColor .black
-            fifthNameLabel.textColor = UIColor .green
+            fifthNameLabel.textColor = UIColor .magenta
             if holder == "0" {
                 name4TextField.text = String(scorePlayer4)
                 counter += 1
-                //need to hide other text fields
             }
             else if holder == "1"{
                 scorePlayer4 = scorePlayer4 + 1
@@ -618,7 +1151,7 @@ class SecondViewController: UIViewController {
                 counter += 1
             }
             else if holder == "4"{
-                scorePlayer4 = scorePlayer4 + 5
+                scorePlayer4 = scorePlayer4 + 4
                 name4TextField.text = String(scorePlayer4)
                 counter += 1
             }
@@ -669,7 +1202,7 @@ class SecondViewController: UIViewController {
             }
         }
         else if counter == 5 {
-            firstNameLabel.textColor = UIColor .green
+            firstNameLabel.textColor = UIColor .magenta
             secondNameLabel.textColor = UIColor .black
             thirdNameLabel.textColor = UIColor .black
             fourthNameLabel.textColor = UIColor .black
@@ -677,7 +1210,6 @@ class SecondViewController: UIViewController {
             if holder == "0" {
                 name5TextField.text = String(scorePlayer5)
                 counter = 1
-                //need to hide other text fields
             }
             else if holder == "1"{
                 scorePlayer5 = scorePlayer5 + 1
@@ -695,7 +1227,7 @@ class SecondViewController: UIViewController {
                 counter = 1
             }
             else if holder == "4"{
-                scorePlayer5 = scorePlayer5 + 5
+                scorePlayer5 = scorePlayer5 + 4
                 name5TextField.text = String(scorePlayer5)
                 counter = 1
             }

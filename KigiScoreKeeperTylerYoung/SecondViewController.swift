@@ -47,7 +47,7 @@ class SecondViewController: UIViewController {
     var scorePlayer3 = 0
     var scorePlayer4 = 0
     var scorePlayer5 = 0
-    var numberOfPlayers = 0
+
     
     var size = 0
     var numPlayers = 0
@@ -57,7 +57,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        numberOfPlayers = viewController.counter
+ 
         
         if player1 != "" {
             numPlayers += 1
@@ -74,43 +74,54 @@ class SecondViewController: UIViewController {
         if player5 != "" {
             numPlayers += 1
         }
-//        numberOfPlayers = viewController.getNumberofPlayers()
-//        if numberOfPlayers == 0 { //need a get count
-//            fifthNameLabel.isHidden = true
-//        }
-//        else if numberOfPlayers == 1 {
-//            secondNameLabel.isHidden = true
-//            thirdNameLabel.isHidden = true
-//            fourthNameLabel.isHidden = true
-//            fifthNameLabel.isHidden = true
-//            name2TextField.isHidden = true
-//            name3TextField.isHidden = true
-//            name4TextField.isHidden = true
-//            name5TextField.isHidden = true        }
-//        else if numberOfPlayers == 2 {
-//            thirdNameLabel.isHidden = true
-//            fourthNameLabel.isHidden = true
-//            fifthNameLabel.isHidden = true
-//            name3TextField.isHidden = true
-//            name4TextField.isHidden = true
-//            name5TextField.isHidden = true
-//        }
-//        else if numberOfPlayers == 3 {
-//                fourthNameLabel.isHidden = true
-//                fifthNameLabel.isHidden = true
-//                name4TextField.isHidden = true
-//                name5TextField.isHidden = true
-//            }
-//        else if viewController.counter == 4 {
-//                fifthNameLabel.isHidden = true
-//                name5TextField.isHidden = true
-//        }
-        if numberOfPlayers == 2{
+        
+        if numPlayers == 1{
+            firstNameLabel.text = player1 + " score:"
+            secondNameLabel.text = ""
+            thirdNameLabel.text = ""
+            fourthNameLabel.text = ""
+            fifthNameLabel.text = ""
+            name1TextField.text = String(scorePlayer1)
+            name2TextField.isHidden = true
+            name3TextField.isHidden = true
+            name4TextField.isHidden = true
+            name5TextField.isHidden = true
+        }
+        else if numPlayers == 2{
             firstNameLabel.text = player1 + " score:"
             secondNameLabel.text = player2 + " score:"
             thirdNameLabel.text = ""
             fourthNameLabel.text = ""
             fifthNameLabel.text = ""
+            name1TextField.text = String(scorePlayer1)
+            name2TextField.text = String(scorePlayer2)
+            name3TextField.isHidden = true
+            name4TextField.isHidden = true
+            name5TextField.isHidden = true
+        }
+        else if numPlayers == 3{
+            firstNameLabel.text = player1 + " score:"
+            secondNameLabel.text = player2 + " score:"
+            thirdNameLabel.text = player3 + " score:"
+            fourthNameLabel.text = ""
+            fifthNameLabel.text = ""
+            name1TextField.text = String(scorePlayer1)
+            name2TextField.text = String(scorePlayer2)
+            name3TextField.text = String(scorePlayer3)
+            name4TextField.isHidden = true
+            name5TextField.isHidden = true
+        }
+        else if numPlayers == 4{
+            firstNameLabel.text = player1 + " score:"
+            secondNameLabel.text = player2 + " score:"
+            thirdNameLabel.text = player3 + " score:"
+            fourthNameLabel.text = player4 + " score:"
+            fifthNameLabel.text = ""
+            name1TextField.text = String(scorePlayer1)
+            name2TextField.text = String(scorePlayer2)
+            name3TextField.text = String(scorePlayer3)
+            name4TextField.text = String(scorePlayer4)
+            name5TextField.isHidden = true
         }
         else{
         firstNameLabel.text = player1 + " score:"
@@ -125,28 +136,9 @@ class SecondViewController: UIViewController {
         name5TextField.text = String(scorePlayer5)
         firstNameLabel.textColor = UIColor .green
         }
-        // Do any additional setup after loading the view.
+
     }
     
-    //func getNumberofPlayers() -> Int {
-       // numPlayers = viewController.players.count
-        //return size
-   //}
-    
-    //func highlight() {
-        //numPlayers = getNumberofPlayers()
-        //for _ in 0...numPlayers {
-            
-        //}
-    //}
-    
-    //func getTurn() {
-        //numberPlayers = getNumberofPlayers()
-        
-        //for _ in numberPlayers {
-            
-        //}
-    //}
     
     var counter = 1
     

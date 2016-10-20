@@ -7,22 +7,32 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
     @IBOutlet var buttonTapRecognizer: UITapGestureRecognizer!
     @IBOutlet weak var addPlayerButton: UIButton!
     @IBOutlet weak var playerNameInput1: UITextField!
-    //@IBOutlet weak var firstViewButton: UIButton!
+    var buttonSound = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        do {
+            try buttonSound = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath:Bundle.main.path(forResource: "tokyo", ofType: "mp3")!) as URL)
+        } catch {
+            NSLog("Error with audio file")
+        }
     }
     
     func dismissKeyboard() {
         view.endEditing(true)
     }
     
+    //Plays music when Start Game! button is clicked
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        buttonSound.play()
+    }
     
     var players = [""]
     var counter = 0
@@ -64,11 +74,5 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    
-    
-    
-    
-    
 }
 

@@ -77,6 +77,7 @@
                                 <gestureRecognizers/>
                                 <state key="normal" title="Start Game!"/>
                                 <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5U3-o8-Q27"/>
                                     <segue destination="g9p-8V-48O" kind="show" identifier="showSecondViewController" id="FJd-e8-ID3"/>
                                 </connections>
                             </button>

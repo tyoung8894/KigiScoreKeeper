@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D86948911DB9841E003E5E27 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86948901DB9841E003E5E27 /* AudioToolbox.framework */; };
+		D86948931DB986A4003E5E27 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86948921DB986A4003E5E27 /* AVFoundation.framework */; };
+		D86948971DB98A08003E5E27 /* tokyo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D86948961DB98A08003E5E27 /* tokyo.mp3 */; };
 		D8C787431DAD86AA003313C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C787421DAD86AA003313C6 /* AppDelegate.swift */; };
 		D8C787451DAD86AA003313C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C787441DAD86AA003313C6 /* ViewController.swift */; };
 		D8C787481DAD86AA003313C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C787461DAD86AA003313C6 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D86948901DB9841E003E5E27 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D86948921DB986A4003E5E27 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D86948961DB98A08003E5E27 /* tokyo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tokyo.mp3; sourceTree = "<group>"; };
 		D8C7873F1DAD86AA003313C6 /* KigiScoreKeeperTylerYoung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KigiScoreKeeperTylerYoung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C787421DAD86AA003313C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8C787441DAD86AA003313C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86948931DB986A4003E5E27 /* AVFoundation.framework in Frameworks */,
+				D86948911DB9841E003E5E27 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D869488F1DB9841E003E5E27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D86948921DB986A4003E5E27 /* AVFoundation.framework */,
+				D86948901DB9841E003E5E27 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D86948941DB986BB003E5E27 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D86948951DB989CC003E5E27 /* AudioFiles */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D86948951DB989CC003E5E27 /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D86948961DB98A08003E5E27 /* tokyo.mp3 */,
+			);
+			name = AudioFiles;
+			sourceTree = "<group>";
+		};
 		D8C787361DAD86AA003313C6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +116,7 @@
 				D8C787561DAD86AA003313C6 /* KigiScoreKeeperTylerYoungTests */,
 				D8C787611DAD86AA003313C6 /* KigiScoreKeeperTylerYoungUITests */,
 				D8C787401DAD86AA003313C6 /* Products */,
+				D869488F1DB9841E003E5E27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +133,7 @@
 		D8C787411DAD86AA003313C6 /* KigiScoreKeeperTylerYoung */ = {
 			isa = PBXGroup;
 			children = (
+				D86948941DB986BB003E5E27 /* SupportingFiles */,
 				D8C787421DAD86AA003313C6 /* AppDelegate.swift */,
 				D8C787441DAD86AA003313C6 /* ViewController.swift */,
 				D8C787461DAD86AA003313C6 /* Main.storyboard */,
@@ -236,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8C7874D1DAD86AA003313C6 /* LaunchScreen.storyboard in Resources */,
+				D86948971DB98A08003E5E27 /* tokyo.mp3 in Resources */,
 				D8C7874A1DAD86AA003313C6 /* Assets.xcassets in Resources */,
 				D8C787481DAD86AA003313C6 /* Main.storyboard in Resources */,
 			);
@@ -509,6 +545,7 @@
 				D8C787691DAD86AA003313C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8C7876A1DAD86AA003313C6 /* Build configuration list for PBXNativeTarget "KigiScoreKeeperTylerYoungTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +554,7 @@
 				D8C7876C1DAD86AA003313C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8C7876D1DAD86AA003313C6 /* Build configuration list for PBXNativeTarget "KigiScoreKeeperTylerYoungUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +563,7 @@
 				D8C7876F1DAD86AA003313C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

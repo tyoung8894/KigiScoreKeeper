@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AudioToolbox
+import AVFoundation
 
 class SecondViewController: UIViewController {
     
@@ -47,6 +49,8 @@ class SecondViewController: UIViewController {
     var scorePlayer4 = 0
     var scorePlayer5 = 0
     var numPlayers = 0
+    
+    
     
     
     

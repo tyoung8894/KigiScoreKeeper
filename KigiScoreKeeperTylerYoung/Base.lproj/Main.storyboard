@@ -202,42 +202,49 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="957-6L-1B2">
                                         <state key="normal" title="7"/>
                                         <connections>
+                                            <action selector="ClickSeven:" destination="g9p-8V-48O" eventType="touchUpInside" id="L3P-rL-eiJ"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="BYU-YC-qIj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhR-5U-noJ">
                                         <state key="normal" title="8"/>
                                         <connections>
+                                            <action selector="ClickEight:" destination="g9p-8V-48O" eventType="touchUpInside" id="fjE-HV-3wx"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="rFz-eX-7Eh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjB-p2-x6d">
                                         <state key="normal" title="9"/>
                                         <connections>
+                                            <action selector="ClickNine:" destination="g9p-8V-48O" eventType="touchUpInside" id="xwu-ra-EoH"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="yW1-zO-evH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-e7-UIC">
                                         <state key="normal" title="10"/>
                                         <connections>
+                                            <action selector="ClickTen:" destination="g9p-8V-48O" eventType="touchUpInside" id="cQp-T8-MfZ"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="cIq-GK-0F9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0o-DD-7Ro">
                                         <state key="normal" title="11"/>
                                         <connections>
+                                            <action selector="ClickEleven:" destination="g9p-8V-48O" eventType="touchUpInside" id="wcG-5W-dyR"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="GHO-Mw-1D0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-fF-6dh">
                                         <state key="normal" title="12"/>
                                         <connections>
+                                            <action selector="ClickTwelve:" destination="g9p-8V-48O" eventType="touchUpInside" id="xh0-Fm-tpy"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="iDC-H2-yaL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucU-q7-6Un">
                                         <state key="normal" title="13"/>
                                         <connections>
+                                            <action selector="Click:" destination="g9p-8V-48O" eventType="touchUpInside" id="IOZ-Kb-9wG"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="2ww-jT-RnC"/>
                                         </connections>
                                     </button>
@@ -255,36 +262,42 @@
                                         <gestureRecognizers/>
                                         <state key="normal" title="1"/>
                                         <connections>
+                                            <action selector="ClickOne:" destination="g9p-8V-48O" eventType="touchUpInside" id="e3N-Fl-Pyv"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="Zkr-Vw-xgf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8P-Ih-sR3">
                                         <state key="normal" title="2"/>
                                         <connections>
+                                            <action selector="ClickTwo:" destination="g9p-8V-48O" eventType="touchUpInside" id="lAs-co-Qea"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="vju-yl-8NN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5i-Z2-fmY">
                                         <state key="normal" title="3"/>
                                         <connections>
+                                            <action selector="ClickThree:" destination="g9p-8V-48O" eventType="touchUpInside" id="dWL-Ew-wR2"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="Tfc-bY-PfL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tss-Z1-IfZ">
                                         <state key="normal" title="4"/>
                                         <connections>
+                                            <action selector="ClickFour:" destination="g9p-8V-48O" eventType="touchUpInside" id="tVR-S7-1RP"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="y7l-A8-Yxe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJV-io-jyq">
                                         <state key="normal" title="5"/>
                                         <connections>
+                                            <action selector="ClickFive:" destination="g9p-8V-48O" eventType="touchUpInside" id="Amt-wa-63d"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="m5M-6c-gLK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-9b-F60">
                                         <state key="normal" title="6"/>
                                         <connections>
+                                            <action selector="ClickSix:" destination="g9p-8V-48O" eventType="touchUpInside" id="e8E-3Q-2ws"/>
                                             <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="oTY-ao-il9"/>
                                         </connections>
                                     </button>

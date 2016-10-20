@@ -10,6 +10,7 @@
 		D86948911DB9841E003E5E27 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86948901DB9841E003E5E27 /* AudioToolbox.framework */; };
 		D86948931DB986A4003E5E27 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86948921DB986A4003E5E27 /* AVFoundation.framework */; };
 		D86948971DB98A08003E5E27 /* tokyo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D86948961DB98A08003E5E27 /* tokyo.mp3 */; };
+		D86948991DB98CC3003E5E27 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = D86948981DB98CC3003E5E27 /* coin.wav */; };
 		D8C787431DAD86AA003313C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C787421DAD86AA003313C6 /* AppDelegate.swift */; };
 		D8C787451DAD86AA003313C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C787441DAD86AA003313C6 /* ViewController.swift */; };
 		D8C787481DAD86AA003313C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C787461DAD86AA003313C6 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		D86948901DB9841E003E5E27 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D86948921DB986A4003E5E27 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D86948961DB98A08003E5E27 /* tokyo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tokyo.mp3; sourceTree = "<group>"; };
+		D86948981DB98CC3003E5E27 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
 		D8C7873F1DAD86AA003313C6 /* KigiScoreKeeperTylerYoung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KigiScoreKeeperTylerYoung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C787421DAD86AA003313C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8C787441DAD86AA003313C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		D86948951DB989CC003E5E27 /* AudioFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D86948981DB98CC3003E5E27 /* coin.wav */,
 				D86948961DB98A08003E5E27 /* tokyo.mp3 */,
 			);
 			name = AudioFiles;
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86948991DB98CC3003E5E27 /* coin.wav in Resources */,
 				D8C7874D1DAD86AA003313C6 /* LaunchScreen.storyboard in Resources */,
 				D86948971DB98A08003E5E27 /* tokyo.mp3 in Resources */,
 				D8C7874A1DAD86AA003313C6 /* Assets.xcassets in Resources */,

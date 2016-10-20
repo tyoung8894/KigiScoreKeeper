@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         else {
             players.append(playerNameInput1.text!)
             counter += 1
-            playerNameInput1.text = "" //resets the text field to nothing
+            playerNameInput1.text = ""
             
         }
     }
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             if players.count >= 2 { secondViewController.player1 = players[1]}
             
             if players.count >= 3 {
-                if players[2] != "" {  //if a player name was inputted
+                if players[2] != "" {  
                     secondViewController.player2 = players[2]}
             }
             if players.count >= 4 {

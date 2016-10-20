@@ -36,7 +36,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var fourthNameLabel: UILabel!
     @IBOutlet weak var fifthNameLabel: UILabel!
     
-    
+    var coinSound = AVAudioPlayer()
     var viewController = ViewController()
     var player1 : String = ""
     var player2 : String = ""
@@ -52,11 +52,14 @@ class SecondViewController: UIViewController {
     
     
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        do {
+            try coinSound = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath:Bundle.main.path(forResource: "coin", ofType: "wav")!) as URL)
+        } catch {
+            NSLog("Error with audio file")
+        }
         
         
         if player1 != "" {
@@ -143,6 +146,59 @@ class SecondViewController: UIViewController {
         
     }
     
+    //Plays a coin sound when points are added
+    
+    @IBAction func ClickOne(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickTwo(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickThree(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickFour(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickFive(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickSix(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickSeven(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickEight(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickNine(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickTen(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickEleven(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func ClickTwelve(_ sender: UIButton) {
+        coinSound.play()
+    }
+    
+    @IBAction func Click(_ sender: UIButton) {
+        coinSound.play()
+    }
     
     var counter = 1
     var counterTwo = 1

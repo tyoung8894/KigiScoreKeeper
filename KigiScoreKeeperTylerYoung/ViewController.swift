@@ -11,20 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var buttonTapRecognizer: UITapGestureRecognizer!
-    
     @IBOutlet weak var addPlayerButton: UIButton!
     @IBOutlet weak var playerNameInput1: UITextField!
     //@IBOutlet weak var firstViewButton: UIButton!
-    var numPlayers = 0
     
-    var number = 0
-    var counterTwo = 0
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        //view.addGestureRecognizer(tap)
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     func dismissKeyboard() {
@@ -54,11 +46,11 @@ class ViewController: UIViewController {
             
             if players.count >= 3 {
                 if players[2] != "" {  //if a player name was inputted
-                secondViewController.player2 = players[2]}
+                    secondViewController.player2 = players[2]}
             }
             if players.count >= 4 {
                 if players[3] != "" {
-                secondViewController.player3 = players[3]}
+                    secondViewController.player3 = players[3]}
             }
             
             if players.count >= 5 {
@@ -68,20 +60,12 @@ class ViewController: UIViewController {
             
             if players.count >= 6 {
                 if players[5] != "" {
-                secondViewController.player5 = players[5]}
+                    secondViewController.player5 = players[5]}
             }
         }
     }
     
-    func getNumberofPlayers() -> Int {
-        for _ in 0...counter {
-            number += 1
-        }
-        numPlayers = counter
-        return numPlayers
-    }
     
-
     
     
     

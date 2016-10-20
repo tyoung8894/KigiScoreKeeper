@@ -125,189 +125,60 @@
                                 <frame key="frameInset" minY="62" width="375" height="605"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndV-5w-d03">
-                                <frame key="frameInset" minX="64" minY="156" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="name1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndV-5w-d03">
+                                <frame key="frameInset" minX="37" minY="152" width="130" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8P-Ih-sR3">
-                                <frame key="frameInset" minX="116" minY="492" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="2"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="vju-yl-8NN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5i-Z2-fmY">
-                                <frame key="frameInset" minX="172" minY="492" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="3"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="Tfc-bY-PfL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tss-Z1-IfZ">
-                                <frame key="frameInset" minX="224" minY="492" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="4"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="y7l-A8-Yxe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJV-io-jyq">
-                                <frame key="frameInset" minX="278" minY="492" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="5"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="m5M-6c-gLK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-9b-F60">
-                                <frame key="frameInset" minX="329" minY="492" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="6"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="oTY-ao-il9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="957-6L-1B2">
-                                <frame key="frameInset" minX="8" minY="530" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="7"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="BYU-YC-qIj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhR-5U-noJ">
-                                <frame key="frameInset" minX="62" minY="530" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="8"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="rFz-eX-7Eh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjB-p2-x6d">
-                                <frame key="frameInset" minX="116" minY="530" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="9"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="yW1-zO-evH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-e7-UIC">
-                                <frame key="frameInset" minX="170" minY="530" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="10"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="cIq-GK-0F9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0o-DD-7Ro">
-                                <frame key="frameInset" minX="224" minY="530" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="11"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="GHO-Mw-1D0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-fF-6dh">
-                                <frame key="frameInset" minX="278" minY="530" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="12"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="iDC-H2-yaL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucU-q7-6Un">
-                                <frame key="frameInset" minX="332" minY="530" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="13"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="2ww-jT-RnC"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMe-s8-0KJ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMe-s8-0KJ">
                                 <frame key="frameInset" minX="178" minY="147" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6h-zX-6i3">
-                                <frame key="frameInset" minX="64" minY="198" width="104" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="name2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6h-zX-6i3">
+                                <frame key="frameInset" minX="37" minY="198" width="130" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sY-Xg-RXR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sY-Xg-RXR">
                                 <frame key="frameInset" minX="178" minY="193" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCo-86-Y11">
-                                <frame key="frameInset" minX="62" minY="492" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <state key="normal" title="1"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="Zkr-Vw-xgf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFd-H6-XIQ">
-                                <frame key="frameInset" minX="64" minY="235" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="name3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFd-H6-XIQ">
+                                <frame key="frameInset" minX="37" minY="240" width="130" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYT-Vv-7Rd">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYT-Vv-7Rd">
                                 <frame key="frameInset" minX="178" minY="235" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DuK-Gm-df8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DuK-Gm-df8">
                                 <frame key="frameInset" minX="178" minY="280" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0h-Ne-5zm">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0h-Ne-5zm">
                                 <frame key="frameInset" minX="178" minY="325" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="150-2S-aLb">
-                                <frame key="frameInset" minX="64" minY="280" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="name4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="150-2S-aLb">
+                                <frame key="frameInset" minX="37" minY="285" width="130" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmg-QS-XXg">
-                                <frame key="frameInset" minX="64" minY="325" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTU-g4-WEj">
-                                <frame key="frameInset" minX="8" minY="492" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="0"/>
-                                <connections>
-                                    <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="5Es-Il-L6N"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf3-At-L5A">
                                 <attributedString key="attributedText">
                                     <fragment content="Scoreboard">
@@ -319,12 +190,142 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="name5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmg-QS-XXg">
+                                <frame key="frameInset" minX="37" minY="330" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5xz-sG-Cxb">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="957-6L-1B2">
+                                        <state key="normal" title="7"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="BYU-YC-qIj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhR-5U-noJ">
+                                        <state key="normal" title="8"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="rFz-eX-7Eh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjB-p2-x6d">
+                                        <state key="normal" title="9"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="yW1-zO-evH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-e7-UIC">
+                                        <state key="normal" title="10"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="cIq-GK-0F9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0o-DD-7Ro">
+                                        <state key="normal" title="11"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="GHO-Mw-1D0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-fF-6dh">
+                                        <state key="normal" title="12"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="iDC-H2-yaL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucU-q7-6Un">
+                                        <state key="normal" title="13"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="2ww-jT-RnC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bqQ-KN-PdT">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTU-g4-WEj">
+                                        <state key="normal" title="0"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="5Es-Il-L6N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCo-86-Y11">
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="1"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="Zkr-Vw-xgf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8P-Ih-sR3">
+                                        <state key="normal" title="2"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="vju-yl-8NN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5i-Z2-fmY">
+                                        <state key="normal" title="3"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="Tfc-bY-PfL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tss-Z1-IfZ">
+                                        <state key="normal" title="4"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="y7l-A8-Yxe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJV-io-jyq">
+                                        <state key="normal" title="5"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="m5M-6c-gLK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-9b-F60">
+                                        <state key="normal" title="6"/>
+                                        <connections>
+                                            <action selector="addScore:" destination="g9p-8V-48O" eventType="touchUpInside" id="oTY-ao-il9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7sY-Xg-RXR" firstAttribute="leading" secondItem="t6h-zX-6i3" secondAttribute="trailing" constant="11" id="0Is-uy-CJx"/>
+                            <constraint firstItem="ndV-5w-d03" firstAttribute="top" secondItem="Pf3-At-L5A" secondAttribute="bottom" constant="36.5" id="0bM-Zu-gsG"/>
+                            <constraint firstItem="150-2S-aLb" firstAttribute="leading" secondItem="es9-Tj-7yT" secondAttribute="leadingMargin" constant="21" id="4uX-cg-veg"/>
+                            <constraint firstItem="5xz-sG-Cxb" firstAttribute="leading" secondItem="es9-Tj-7yT" secondAttribute="leadingMargin" constant="6" id="67j-zD-Qxd"/>
                             <constraint firstItem="Pf3-At-L5A" firstAttribute="leading" secondItem="es9-Tj-7yT" secondAttribute="leadingMargin" constant="-2" id="723-cS-A1g"/>
                             <constraint firstItem="Pf3-At-L5A" firstAttribute="top" secondItem="Hz4-4y-UC4" secondAttribute="bottom" constant="8" id="Bce-2j-40S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E0h-Ne-5zm" secondAttribute="trailing" constant="84" id="DbG-wg-6Sv"/>
+                            <constraint firstItem="150-2S-aLb" firstAttribute="top" secondItem="gFd-H6-XIQ" secondAttribute="bottom" constant="24" id="EQk-eO-6c1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FMe-s8-0KJ" secondAttribute="trailing" constant="84" id="Fbn-0d-c42"/>
+                            <constraint firstItem="NYT-Vv-7Rd" firstAttribute="leading" secondItem="gFd-H6-XIQ" secondAttribute="trailing" constant="11" id="JSf-TX-KGh"/>
+                            <constraint firstItem="E0h-Ne-5zm" firstAttribute="top" secondItem="DuK-Gm-df8" secondAttribute="bottom" constant="15" id="Pyd-s0-6H3"/>
+                            <constraint firstItem="AEc-f2-9ux" firstAttribute="top" secondItem="5xz-sG-Cxb" secondAttribute="bottom" constant="10" id="SN4-Xv-mdQ"/>
+                            <constraint firstItem="t6h-zX-6i3" firstAttribute="top" secondItem="ndV-5w-d03" secondAttribute="bottom" constant="25" id="XJ8-OD-big"/>
+                            <constraint firstItem="NYT-Vv-7Rd" firstAttribute="top" secondItem="7sY-Xg-RXR" secondAttribute="bottom" constant="12" id="Y0G-Gd-0rB"/>
+                            <constraint firstItem="bqQ-KN-PdT" firstAttribute="leading" secondItem="es9-Tj-7yT" secondAttribute="leadingMargin" constant="6" id="Yqu-4Y-N1p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bqQ-KN-PdT" secondAttribute="trailing" constant="7" id="aWu-69-ez4"/>
+                            <constraint firstItem="Kmg-QS-XXg" firstAttribute="leading" secondItem="es9-Tj-7yT" secondAttribute="leadingMargin" constant="21" id="aoQ-q7-LQK"/>
+                            <constraint firstItem="E0h-Ne-5zm" firstAttribute="leading" secondItem="Kmg-QS-XXg" secondAttribute="trailing" constant="11" id="bBO-8N-pEw"/>
+                            <constraint firstItem="ndV-5w-d03" firstAttribute="leading" secondItem="es9-Tj-7yT" secondAttribute="leadingMargin" constant="21" id="clf-jG-tQY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NYT-Vv-7Rd" secondAttribute="trailing" constant="84" id="dQo-4d-2KN"/>
+                            <constraint firstItem="FMe-s8-0KJ" firstAttribute="leading" secondItem="ndV-5w-d03" secondAttribute="trailing" constant="11" id="dp3-z4-vuX"/>
+                            <constraint firstItem="DuK-Gm-df8" firstAttribute="top" secondItem="NYT-Vv-7Rd" secondAttribute="bottom" constant="15" id="e0u-C1-vUs"/>
+                            <constraint firstItem="gFd-H6-XIQ" firstAttribute="leading" secondItem="es9-Tj-7yT" secondAttribute="leadingMargin" constant="21" id="eHM-no-fib"/>
+                            <constraint firstItem="5xz-sG-Cxb" firstAttribute="top" secondItem="bqQ-KN-PdT" secondAttribute="bottom" constant="8" id="eOP-kz-0k0"/>
+                            <constraint firstItem="gFd-H6-XIQ" firstAttribute="top" secondItem="t6h-zX-6i3" secondAttribute="bottom" constant="21" id="g7y-vi-Rn4"/>
+                            <constraint firstItem="Kmg-QS-XXg" firstAttribute="top" secondItem="150-2S-aLb" secondAttribute="bottom" constant="24" id="h6w-pK-slD"/>
+                            <constraint firstItem="FMe-s8-0KJ" firstAttribute="top" secondItem="Pf3-At-L5A" secondAttribute="bottom" constant="31.5" id="hyW-Y5-VUD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7sY-Xg-RXR" secondAttribute="trailing" constant="84" id="lN6-O3-MUT"/>
+                            <constraint firstItem="t6h-zX-6i3" firstAttribute="leading" secondItem="es9-Tj-7yT" secondAttribute="leadingMargin" constant="21" id="ldB-2B-kx2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5xz-sG-Cxb" secondAttribute="trailing" constant="7" id="nIU-yB-FjP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pf3-At-L5A" secondAttribute="trailing" constant="2" id="nIp-le-OkJ"/>
+                            <constraint firstItem="7sY-Xg-RXR" firstAttribute="top" secondItem="FMe-s8-0KJ" secondAttribute="bottom" constant="16" id="oEH-Mh-kE5"/>
+                            <constraint firstItem="DuK-Gm-df8" firstAttribute="leading" secondItem="150-2S-aLb" secondAttribute="trailing" constant="11" id="vj6-KS-lzP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DuK-Gm-df8" secondAttribute="trailing" constant="84" id="z2p-nq-os1"/>
                         </constraints>
                     </view>
                     <connections>
